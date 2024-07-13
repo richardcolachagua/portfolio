@@ -21,9 +21,35 @@ export default function TechStack() {
         >
           Tech Stack
         </Typography>
-        <ImageList sx={{ width: 300, height: 300 }} cols={3} gap={40}>
-          {itemData.map((item) => (
+        <Typography variant="h5" sx={{ fontWeight: "bold", marginTop: "10px" }}>
+          Frontend
+        </Typography>
+        <ImageList
+          sx={{ width: 300, height: 300, marginBottom: "20px" }}
+          cols={3}
+          gap={20}
+        >
+          {frontendItemData.map((item) => (
             <ImageListItem key={item.img} sx={{ overflow: "visible" }}>
+              <img
+                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                alt={item.title}
+                loading="lazy"
+                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+        <Typography variant="h5" sx={{ fontWeight: "bold", marginTop: "10px" }}>
+          Backend
+        </Typography>
+        <ImageList sx={{ width: 300, height: 300 }} cols={3} gap={20}>
+          {backendItemData.map((item) => (
+            <ImageListItem
+              key={item.img}
+              sx={{ overflow: "visible", marginBottom: "60px" }}
+            >
               <img
                 srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -39,7 +65,7 @@ export default function TechStack() {
   );
 }
 
-const itemData = [
+const frontendItemData = [
   {
     img: "/assets/html-5.svg",
     title: "html5",
@@ -63,5 +89,24 @@ const itemData = [
   {
     img: "/assets/framer.svg",
     title: "Framer",
+  },
+];
+
+const backendItemData = [
+  {
+    img: "/assets/axios.svg",
+    title: "axios",
+  },
+  {
+    img: "/assets/express.svg",
+    title: "express",
+  },
+  {
+    img: "/assets/mongodb.svg",
+    title: "mongoDB",
+  },
+  {
+    img: "/assets/nodejs.svg",
+    title: "node.js",
   },
 ];
