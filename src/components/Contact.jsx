@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Box, Stack } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -18,15 +19,15 @@ const Contact = () => {
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
-        backgroundColor: "silver",
+        backgroundColor: "rgba(242, 242, 242, .5)",
       }}
     >
       <Typography
         variant="h3"
         sx={{
           fontWeight: "bold",
-          color: "white",
-          marginBottom: "30px",
+          color: "black",
+          marginBottom: "10px",
         }}
       >
         Contact
@@ -34,17 +35,25 @@ const Contact = () => {
       <Box>
         <Stack
           direction="row"
-          spacing={2}
+          spacing={3}
           sx={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
           }}
         >
-          <EmailIcon sx={{ width: "30px" }} />
-          <img src="/assets/linkedin-icon.svg" alt="LinkedIn" width="50px" />
-          <img src="/assets/github.svg" alt="Github" width="90px" />
-          <img src="/assets/resume.png" alt="Resume" width="70px" />
+          <Link>
+            <EmailIcon sx={{ fontSize: "60px" }} />
+          </Link>
+          <Link>
+            <img src="/assets/linkedin-icon.svg" alt="LinkedIn" width="50px" />
+          </Link>
+          <Link>
+            <img src="/assets/github.svg" alt="Github" width="90px" />
+          </Link>
+          <Link>
+            <img src="/assets/resume.png" alt="Resume" width="70px" />
+          </Link>
         </Stack>
       </Box>
     </Box>

@@ -3,6 +3,7 @@ import Contact from "./components/Contact";
 import "./App.css";
 import TechStack from "./components/TechStack";
 import DesignStack from "./components/DesignStack";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/techstack" element={<TechStack />} />
       <Route path="designstack" element={<DesignStack />} />
+      <Route path="/homepage" element={<Homepage />} />
     </Routes>
   );
 }

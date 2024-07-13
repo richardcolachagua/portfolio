@@ -59,7 +59,6 @@ export default function TechStack() {
           sx={{
             width: 300,
             height: 300,
-            marginBottom: "20px",
             marginLeft: "200px",
           }}
           cols={3}
@@ -68,14 +67,18 @@ export default function TechStack() {
           {backendItemData.map((item) => (
             <ImageListItem
               key={item.img}
-              sx={{ overflow: "visible", marginBottom: "60px" }}
+              sx={{ overflow: "visible", marginBottom: "80px" }}
             >
               <img
                 srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                 alt={item.title}
                 loading="lazy"
-                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
               />
             </ImageListItem>
           ))}
