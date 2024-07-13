@@ -15,6 +15,9 @@ const Homepage = () => {
           Hello. My name is Richard Colachagua. I am a New York City Based
           Software Engineer
         </Typography>
+        <Typography sx={{ fontSize: "8px", fontFamily: "helvetica" }}>
+          About Me
+        </Typography>
         <Typography sx={{ fontSize: "12px", fontFamily: "helvetica" }}>
           I have always had a natural curosity of learning, and in 2021 I left
           the marketng career I had started to carve out for myself to venture

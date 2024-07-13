@@ -11,13 +11,14 @@ const Contact = () => {
         height: "250px",
         width: "500px",
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         position: "absolute",
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
-        backgroundColor: "red",
+        backgroundColor: "silver",
       }}
     >
       <Typography
@@ -33,18 +34,17 @@ const Contact = () => {
       <Box>
         <Stack
           direction="row"
+          spacing={2}
           sx={{
-            marginTop: "100px",
-            marginRight: "100px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
           }}
         >
-          <EmailIcon />
-          <img src="/assets/linkedin-icon.svg" alt="" width="30px" />
-          <img src="/assets/github.svg" alt="" width="30px" />
-          <img src="/assets/resume.png" alt="" width="30px" />
+          <EmailIcon sx={{ width: "30px" }} />
+          <img src="/assets/linkedin-icon.svg" alt="LinkedIn" width="50px" />
+          <img src="/assets/github.svg" alt="Github" width="90px" />
+          <img src="/assets/resume.png" alt="Resume" width="70px" />
         </Stack>
       </Box>
     </Box>
