@@ -21,8 +21,17 @@ export default function DesignStack() {
         >
           Design Stack
         </Typography>
-        <ImageList sx={{ width: 300, height: 300 }} cols={3} gap={40}>
-          {itemData.map((item) => (
+        <ImageList
+          sx={{
+            width: 300,
+            height: 300,
+            marginBottom: "20px",
+            marginLeft: "230px",
+          }}
+          cols={3}
+          gap={20}
+        >
+          {designItemData.map((item) => (
             <ImageListItem key={item.img} sx={{ overflow: "visible" }}>
               <img
                 srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
@@ -39,10 +48,18 @@ export default function DesignStack() {
   );
 }
 
-const itemData = [
+const designItemData = [
   {
     img: "/assets/adobe-xd.svg",
     title: "html5",
+  },
+  {
+    img: "/assets/adobe-photoshop.svg",
+    title: "photoshop",
+  },
+  {
+    img: "/assets/adobe-illustrator.svg",
+    title: "Illustrator",
   },
   {
     img: "/assets/figma.svg",
@@ -50,14 +67,6 @@ const itemData = [
   },
   {
     img: "/assets/midjourney.svg",
-    title: "Javascript",
-  },
-  {
-    img: "/assets/adobe-photoshop.svg",
-    title: "Framer",
-  },
-  {
-    img: "/assets/adobe-illustrator.svg",
-    title: "Material UI",
+    title: "midjourney",
   },
 ];

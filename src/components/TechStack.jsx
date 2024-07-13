@@ -21,11 +21,19 @@ export default function TechStack() {
         >
           Tech Stack
         </Typography>
-        <Typography variant="h5" sx={{ fontWeight: "bold", marginTop: "10px" }}>
+        <Typography
+          variant="h5"
+          sx={{ fontWeight: "bold", marginTop: "10px", marginLeft: "200px" }}
+        >
           Frontend
         </Typography>
         <ImageList
-          sx={{ width: 300, height: 300, marginBottom: "20px" }}
+          sx={{
+            width: 300,
+            height: 300,
+            marginBottom: "20px",
+            marginLeft: "200px",
+          }}
           cols={3}
           gap={20}
         >
@@ -41,10 +49,22 @@ export default function TechStack() {
             </ImageListItem>
           ))}
         </ImageList>
-        <Typography variant="h5" sx={{ fontWeight: "bold", marginTop: "10px" }}>
+        <Typography
+          variant="h5"
+          sx={{ fontWeight: "bold", marginTop: "10px", marginLeft: "200px" }}
+        >
           Backend
         </Typography>
-        <ImageList sx={{ width: 300, height: 300 }} cols={3} gap={20}>
+        <ImageList
+          sx={{
+            width: 300,
+            height: 300,
+            marginBottom: "20px",
+            marginLeft: "200px",
+          }}
+          cols={3}
+          gap={20}
+        >
           {backendItemData.map((item) => (
             <ImageListItem
               key={item.img}
