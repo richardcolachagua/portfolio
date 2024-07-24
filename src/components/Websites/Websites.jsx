@@ -6,8 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const websites = [
-  { image: "", title: "" },
-  { image: "", title: "" },
+  { image: "", title: "Dream Closet" },
+  { image: "", title: "Ironman vs Batman" },
   { image: "", title: "" },
 ];
 
@@ -43,9 +43,14 @@ const Websites = () => {
         variant="h3"
         component="h2"
         align="center"
-        sx={{ color: "#FFFFFF", marginBottom: "40px" }}
+        sx={{
+          color: "#FFFFFF",
+          marginBottom: "40px",
+          fontFamily: "helvetica neue",
+          fontWeight: "bold",
+        }}
       >
-        Websites
+        Work
       </Typography>
       <Slider {...settings}>
         {websites.map((site, index) => (

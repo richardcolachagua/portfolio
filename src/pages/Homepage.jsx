@@ -4,6 +4,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import TechStack from "../components/TechStack";
 import DesignStack from "../components/DesignStack";
 import Contact from "../components/Contact";
+import Websites from "../components/Websites/Websites";
 
 const Homepage = () => {
   const defaultTheme = createTheme();
@@ -11,8 +12,6 @@ const Homepage = () => {
   return (
     <Box
       sx={{
-        textAlign: "center",
-        marginTop: "20px",
         backgroundColor: "black",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -20,16 +19,16 @@ const Homepage = () => {
         minHeight: "100vh",
       }}
     >
-      {" "}
-      <Container>
-        <ThemeProvider theme={defaultTheme}>
-          <CssBaseline />
+      \
+      <ThemeProvider theme={defaultTheme}>
+        <CssBaseline />
+        <Container>
           <Typography
             variant="h3"
             sx={{
               fontWeight: "bold",
               color: "silver",
-              paddingRight: "20px",
+              paddingRight: "120px",
             }}
           >
             Hello. My name is Richard Colachagua. I am a New York City Based
@@ -80,8 +79,11 @@ const Homepage = () => {
               </Grid>
             </Grid>
           </Box>
-        </ThemeProvider>
-      </Container>
+          <Box sx={{ paddingTop: "1000px" }}>
+            <Websites />
+          </Box>
+        </Container>
+      </ThemeProvider>
     </Box>
   );
 };

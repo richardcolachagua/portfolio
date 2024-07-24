@@ -12,7 +12,8 @@ const WebsiteCard = ({ image, title }) => {
   return (
     <Card
       sx={{
-        maxWidth: 345,
+        maxWidth: 800,
+        height: 500,
         backgroundColor: "#1A1A1A",
         color: "#FFFFFF",
         borderRadius: "16px",
@@ -32,10 +33,11 @@ const WebsiteCard = ({ image, title }) => {
       </CardContent>
       <CardActions>
         <Button
-          size="small"
           variant="contained"
           sx={{
-            backgroundColor: "#00BFFF",
+            backgroundColor: "black",
+            marginTop: "300px",
+            marginLeft: "100px",
           }}
         >
           View Website
