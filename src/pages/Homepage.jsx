@@ -5,9 +5,15 @@ import TechStack from "../components/TechStack";
 import DesignStack from "../components/DesignStack";
 import Contact from "../components/Contact";
 import Websites from "../components/Websites/Websites";
+import { motion } from "framer-motion";
 
 const Homepage = () => {
   const defaultTheme = createTheme();
+
+  const fadeInVariant = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 2 } },
+  };
 
   return (
     <Box
@@ -19,56 +25,80 @@ const Homepage = () => {
         minHeight: "100vh",
       }}
     >
-      \
       <ThemeProvider theme={defaultTheme}>
         <CssBaseline />
         <Container>
-          <Typography
-            variant="h3"
-            sx={{
-              fontWeight: "bold",
-              color: "silver",
-              paddingRight: "120px",
-            }}
-          >
-            Hello. My name is Richard Colachagua. I am a New York City Based
-            Software Engineer
-          </Typography>
-          <Typography
-            sx={{
-              fontSize: "20px",
-              fontFamily: "helvetica",
-            }}
-          >
-            About Me
-          </Typography>
-          <Typography
-            sx={{
-              fontSize: "32px",
-              fontFamily: "helvetica",
-              fontWeight: "bold",
-              color: "peru",
-            }}
-          >
-            I have always had a natural curosity of learning, and in 2021, I
-            left the marketng career I had started to carve out for myself to
-            venture into the tech industry. I had watched a tutorial here and
-            there, asked a friend how to get started, and one day took the
-            plunge. I've been studying and working small jobs since.
-          </Typography>
-          <Typography
-            sx={{
-              fontSize: "32px",
-              fontFamily: "helvetica",
-              fontWeight: "bold",
-              color: "peru",
-            }}
-          >
-            Having a graphic design background gives me a plus as a software
-            engineer as it helps me understand frontend web development from
-            more than one perspective.
-          </Typography>
-
+          <Box>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInVariant}
+            >
+              <Typography
+                variant="h3"
+                sx={{
+                  fontWeight: "bold",
+                  color: "silver",
+                  paddingRight: "120px",
+                }}
+              >
+                Hello. My name is Richard Colachagua. I am a New York City Based
+                Software Engineer
+              </Typography>
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInVariant}
+            >
+              <Typography
+                sx={{
+                  fontSize: "20px",
+                  fontFamily: "helvetica",
+                }}
+              >
+                About Me
+              </Typography>
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInVariant}
+            >
+              <Typography
+                sx={{
+                  fontSize: "32px",
+                  fontFamily: "helvetica",
+                  fontWeight: "bold",
+                  color: "peru",
+                }}
+              >
+                I have always had a natural curosity of learning, and in 2021, I
+                left the marketng career I had started to carve out for myself
+                to venture into the tech industry. I had watched a tutorial here
+                and there, asked a friend how to get started, and one day took
+                the plunge. I've been studying and working small jobs since.
+              </Typography>
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInVariant}
+            >
+              <Typography
+                sx={{
+                  fontSize: "32px",
+                  fontFamily: "helvetica",
+                  fontWeight: "bold",
+                  color: "peru",
+                }}
+              >
+                Having a graphic design background gives me a plus as a software
+                engineer as it helps me understand frontend web development from
+                more than one perspective.
+              </Typography>
+            </motion.div>
+          </Box>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2} columns={16}>
               <Grid item xs={8}>
