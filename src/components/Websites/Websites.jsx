@@ -1,12 +1,40 @@
 import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import Slider from "react-slick";
+import { Box, Typography } from "@mui/material";
 import WebsiteCard from "./WebsiteCard";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const websites = [
   { image: "", title: "" },
   { image: "", title: "" },
   { image: "", title: "" },
 ];
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
 
 const Websites = () => {
   return (
@@ -19,13 +47,13 @@ const Websites = () => {
       >
         Websites
       </Typography>
-      <Grid container spacing={4} justifyContent="center">
+      <Slider {...settings}>
         {websites.map((site, index) => (
-          <Grid>
+          <Box key={index} sx={{ padding: "0 10px" }}>
             <WebsiteCard image={site.image} title={site.title} />
-          </Grid>
+          </Box>
         ))}
-      </Grid>
+      </Slider>
     </Box>
   );
 };
