@@ -15,7 +15,7 @@ const WebsiteCard = ({ image, title }) => {
         maxWidth: 800,
         height: 500,
         backgroundColor: "#1A1A1A",
-        color: "#FFFFFF",
+        color: "white",
         borderRadius: "16px",
       }}
     >
@@ -27,7 +27,11 @@ const WebsiteCard = ({ image, title }) => {
         sx={{ borderRadius: "16px 16px 0 0" }}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h4"
+          sx={{ fontWeight: "bold", justifyContent: "center", display: "flex" }}
+        >
           {title}
         </Typography>
       </CardContent>
@@ -38,6 +42,8 @@ const WebsiteCard = ({ image, title }) => {
             backgroundColor: "black",
             marginTop: "300px",
             marginLeft: "100px",
+            justifyContent: "center",
+            display: "flex",
           }}
         >
           View Website

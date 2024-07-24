@@ -17,7 +17,7 @@ export default function DesignStack() {
           variant="h3"
           marginLeft={30}
           marginTop={30}
-          sx={{ fontWeight: "bold" }}
+          sx={{ fontWeight: "bold", color: "beige" }}
         >
           Design Stack
         </Typography>

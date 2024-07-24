@@ -17,13 +17,18 @@ export default function TechStack() {
           variant="h3"
           marginLeft={30}
           marginTop={30}
-          sx={{ fontWeight: "bold" }}
+          sx={{ fontWeight: "bold", color: "beige" }}
         >
           Tech Stack
         </Typography>
         <Typography
           variant="h5"
-          sx={{ fontWeight: "bold", marginTop: "10px", marginLeft: "200px" }}
+          sx={{
+            fontWeight: "bold",
+            marginTop: "10px",
+            marginLeft: "200px",
+            color: "wheat",
+          }}
         >
           Frontend
         </Typography>
@@ -51,7 +56,12 @@ export default function TechStack() {
         </ImageList>
         <Typography
           variant="h5"
-          sx={{ fontWeight: "bold", marginTop: "10px", marginLeft: "200px" }}
+          sx={{
+            fontWeight: "bold",
+            marginTop: "10px",
+            marginLeft: "200px",
+            color: "wheat",
+          }}
         >
           Backend
         </Typography>
