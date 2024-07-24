@@ -1,0 +1,48 @@
+import React from "react";
+import {
+  Card,
+  CardMedia,
+  CardContent,
+  CardActions,
+  Typography,
+  Button,
+} from "@mui/material";
+
+const WebsiteCard = ({ image, title }) => {
+  return (
+    <Card
+      sx={{
+        maxWidth: 345,
+        backgroundColor: "#1A1A1A",
+        color: "#FFFFFF",
+        borderRadius: "16px",
+      }}
+    >
+      <CardMedia
+        component=""
+        height=""
+        image={image}
+        alt={title}
+        sx={{ borderRadius: "16px 16px 0 0" }}
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {title}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button
+          size="small"
+          variant="contained"
+          sx={{
+            backgroundColor: "#00BFFF",
+          }}
+        >
+          View Website
+        </Button>
+      </CardActions>
+    </Card>
+  );
+};
+
+export default WebsiteCard;
