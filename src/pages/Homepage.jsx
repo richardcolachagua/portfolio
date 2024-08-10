@@ -50,16 +50,7 @@ const Homepage = () => {
               initial="hidden"
               animate="visible"
               variants={fadeInVariant}
-            >
-              <Typography
-                sx={{
-                  fontSize: "20px",
-                  fontFamily: "helvetica",
-                }}
-              >
-                About Me
-              </Typography>
-            </motion.div>
+            ></motion.div>
             <motion.div
               initial="hidden"
               animate="visible"
@@ -67,14 +58,29 @@ const Homepage = () => {
             >
               <Typography
                 sx={{
-                  fontSize: "32px",
-                  fontFamily: "helvetica",
+                  color: "white",
                   fontWeight: "bold",
-                  color: "peru",
+                  paddingTop: "50px",
+                  paddingBottom: "30px",
+                  fontFamily: "helvetica",
                 }}
               >
-                I have always had a natural curosity of learning, and in 2021, I
-                left the marketng career I had started to carve out for myself
+                A B O U T M E
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: "26px",
+                  fontFamily: "helvetica",
+                  fontWeight: "bold",
+                  color: "blue",
+                  alignContent: "center",
+                  justifyContent: "center",
+                  display: "flex",
+                  paddingBottom: "30px",
+                }}
+              >
+                I have always had a natural curiosity of learning, and in 2021,
+                I left the marketng career I had started to carve out for myself
                 to venture into the tech industry. I had watched a tutorial here
                 and there, asked a friend how to get started, and one day took
                 the plunge. I've been studying and working small jobs since.
@@ -91,6 +97,10 @@ const Homepage = () => {
                   fontFamily: "helvetica",
                   fontWeight: "bold",
                   color: "peru",
+                  alignContent: "center",
+                  justifyContent: "center",
+                  display: "flex",
+                  paddingBottom: "30px",
                 }}
               >
                 Having a graphic design background gives me a plus as a software
@@ -100,7 +110,7 @@ const Homepage = () => {
             </motion.div>
           </Box>
           <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2} columns={16}>
+            <Grid container spacing={2}>
               <Grid item xs={8}>
                 <TechStack />
               </Grid>

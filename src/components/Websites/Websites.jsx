@@ -46,11 +46,11 @@ const Websites = () => {
         sx={{
           color: "white",
           marginBottom: "40px",
-          fontFamily: "helvetica neue",
+          fontFamily: "helvetica",
           fontWeight: "bold",
         }}
       >
-        Work
+        Websites I've Built
       </Typography>
       <Slider {...settings}>
         {websites.map((site, index) => (
