@@ -1,5 +1,12 @@
 import React from "react";
-import { Typography, Box, Container, Grid, CssBaseline } from "@mui/material";
+import {
+  Typography,
+  Box,
+  Container,
+  Grid,
+  CssBaseline,
+  Stack,
+} from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import TechStack from "../components/TechStack";
 import DesignStack from "../components/DesignStack";
@@ -109,16 +116,30 @@ const Homepage = () => {
               </Typography>
             </motion.div>
           </Box>
-          <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={8}>
+          <Grid
+            container
+            rowSpacing={1}
+            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+          >
+            <Stack
+              direction="row"
+              sx={{
+                width: "100%",
+                justifyContent: "space-between",
+                alignItems: "flex-start",
+                padding: "0 20px",
+              }}
+            >
+              <Box sx={{ flex: "1 1 auto", maxWidth: "50%" }}>
+                {" "}
                 <TechStack />
-              </Grid>
-              <Grid item xs={8}>
+              </Box>
+              <Box sx={{ flex: "1 1 auto", maxWidth: "50%" }}>
+                {" "}
                 <DesignStack />
-              </Grid>
-            </Grid>
-          </Box>
+              </Box>
+            </Stack>
+          </Grid>
           <Box sx={{ paddingTop: "1000px" }}>
             <Websites />
           </Box>

@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 const websites = [
   { image: "", title: "Dream Closet" },
   { image: "", title: "Ironman vs Batman" },
-  { image: "", title: "" },
+  { image: "", title: "Career Website" },
 ];
 
 const settings = {

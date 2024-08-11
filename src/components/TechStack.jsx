@@ -3,98 +3,90 @@ import { Grid, Box, Typography, ImageList, ImageListItem } from "@mui/material";
 
 export default function TechStack() {
   return (
-    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-      <Box
+    <Box>
+      <Typography
+        variant="h3"
         sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          position: "absolute",
+          fontWeight: "bold",
+          color: "beige",
+          textAlign: "center",
+          marginTop: 3,
         }}
       >
-        <Typography
-          variant="h3"
-          marginLeft={30}
-          marginTop={30}
-          sx={{ fontWeight: "bold", color: "beige" }}
-        >
-          Tech Stack
-        </Typography>
-        <Typography
-          variant="h5"
-          sx={{
-            fontWeight: "bold",
-            marginTop: "10px",
-            marginLeft: "200px",
-            color: "wheat",
-          }}
-        >
-          Frontend
-        </Typography>
-        <ImageList
-          sx={{
-            width: 300,
-            height: 300,
-            marginBottom: "20px",
-            marginLeft: "200px",
-          }}
-          cols={3}
-          gap={20}
-        >
-          {frontendItemData.map((item) => (
-            <ImageListItem key={item.img} sx={{ overflow: "visible" }}>
-              <img
-                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                alt={item.title}
-                loading="lazy"
-                style={{ width: "100%", height: "100%", objectFit: "contain" }}
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
-        <Typography
-          variant="h5"
-          sx={{
-            fontWeight: "bold",
-            marginTop: "10px",
-            marginLeft: "200px",
-            color: "wheat",
-          }}
-        >
-          Backend
-        </Typography>
-        <ImageList
-          sx={{
-            width: 300,
-            height: 300,
-            marginLeft: "200px",
-          }}
-          cols={3}
-          gap={20}
-        >
-          {backendItemData.map((item) => (
-            <ImageListItem
-              key={item.img}
-              sx={{ overflow: "visible", marginBottom: "80px" }}
-            >
-              <img
-                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                alt={item.title}
-                loading="lazy"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                }}
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </Box>
-    </Grid>
+        Tech Stack
+      </Typography>
+      <Typography
+        variant="h5"
+        sx={{
+          fontWeight: "bold",
+          color: "wheat",
+          textAlign: "center",
+          marginTop: 2,
+        }}
+      >
+        Frontend
+      </Typography>
+      <ImageList
+        sx={{
+          width: "100%",
+          margin: "0 auto",
+          paddingBottom: 2,
+        }}
+        cols={3}
+        gap={20}
+      >
+        {frontendItemData.map((item) => (
+          <ImageListItem key={item.img} sx={{ overflow: "visible" }}>
+            <img
+              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+              alt={item.title}
+              loading="lazy"
+              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
+      <Typography
+        variant="h5"
+        sx={{
+          fontWeight: "bold",
+          color: "wheat",
+          textAlign: "center",
+          marginTop: 2,
+        }}
+      >
+        Backend
+      </Typography>
+      <ImageList
+        sx={{
+          width: "100%",
+          margin: "0 auto",
+          paddingBottom: 2,
+        }}
+        cols={3}
+        gap={20}
+      >
+        {backendItemData.map((item) => (
+          <ImageListItem
+            key={item.img}
+            sx={{ overflow: "visible", marginBottom: "80px" }}
+          >
+            <img
+              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+              alt={item.title}
+              loading="lazy"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "contain",
+              }}
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
+    </Box>
   );
 }
 
