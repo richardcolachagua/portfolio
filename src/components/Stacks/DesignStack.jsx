@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, Typography, ImageList, ImageListItem } from "@mui/material";
+import { Box, Typography, ImageList, ImageListItem } from "@mui/material";
 
 export default function DesignStack() {
   return (
@@ -10,6 +10,13 @@ export default function DesignStack() {
         sx={{ fontWeight: "bold", color: "beige" }}
       >
         Design Stack
+      </Typography>
+      <Typography
+        variant="h5"
+        marginLeft={30}
+        sx={{ fontWeight: "bold", color: "beige" }}
+      >
+        Creative Tools
       </Typography>
       <ImageList
         sx={{

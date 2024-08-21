@@ -8,8 +8,8 @@ import {
   Stack,
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import TechStack from "../components/TechStack";
-import DesignStack from "../components/DesignStack";
+import TechStack from "../components/Stacks/TechStack";
+import DesignStack from "../components/Stacks/DesignStack";
 import Contact from "../components/Contact";
 import Websites from "../components/Websites/Websites";
 import { motion } from "framer-motion";
@@ -111,9 +111,9 @@ const Homepage = () => {
                   paddingBottom: "30px",
                 }}
               >
-                Having a graphic design background gives me a plus as a software
-                engineer as it helps me understand frontend web development from
-                more than one perspective.
+                Having a graphic design background gives me an advantage as a
+                software engineer as it helps me understand frontend web
+                development from an entirely different approach.
               </Typography>
             </motion.div>
           </Box>
@@ -141,10 +141,13 @@ const Homepage = () => {
               </Box>
             </Stack>
           </Grid>
-          <Box sx={{ paddingTop: "1000px" }}>
+          <Box sx={{ paddingTop: "100px" }}>
             <Websites />
           </Box>
         </Container>
+        <Box sx={{ paddingTop: "100px" }}>
+          <Contact />
+        </Box>
       </ThemeProvider>
     </Box>
   );

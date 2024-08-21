@@ -42,7 +42,7 @@ export default function TechStack() {
               src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
               alt={item.title}
               loading="lazy"
-              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              style={{ width: "70%", height: "70%", objectFit: "contain" }}
             />
           </ImageListItem>
         ))}

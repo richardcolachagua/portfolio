@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Contact from "./components/Contact";
 import "./App.css";
-import TechStack from "./components/TechStack";
-import DesignStack from "./components/DesignStack";
+import TechStack from "./components/Stacks/TechStack";
+import DesignStack from "./components/Stacks/DesignStack";
 import Homepage from "./pages/Homepage";
 
 function App() {

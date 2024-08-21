@@ -16,9 +16,7 @@ const Contact = () => {
         justifyContent: "center",
         alignItems: "center",
         position: "absolute",
-        top: "50%",
         left: "50%",
-        transform: "translate(-50%, -50%)",
         backgroundColor: "rgba(242, 242, 242, .5)",
       }}
     >
