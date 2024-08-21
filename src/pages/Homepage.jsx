@@ -47,10 +47,11 @@ const Homepage = () => {
                   fontWeight: "bold",
                   color: "silver",
                   paddingRight: "120px",
+                  paddingTop: "40px",
                 }}
               >
                 Hello. My name is Richard Colachagua. I am a New York City Based
-                Software Engineer
+                Software Engineer.
               </Typography>
             </motion.div>
             <motion.div

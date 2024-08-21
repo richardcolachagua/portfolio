@@ -7,7 +7,6 @@ export default function DesignStack() {
       <Typography
         variant="h3"
         marginLeft={30}
-        marginTop={30}
         sx={{ fontWeight: "bold", color: "beige" }}
       >
         Design Stack

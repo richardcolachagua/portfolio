@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, Typography, ImageList, ImageListItem } from "@mui/material";
+import { Box, Typography, ImageList, ImageListItem } from "@mui/material";
 
 export default function TechStack() {
   return (
