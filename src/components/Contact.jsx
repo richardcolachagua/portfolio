@@ -15,7 +15,6 @@ const Contact = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        position: "absolute",
         left: "50%",
         backgroundColor: "rgba(242, 242, 242, .5)",
       }}
@@ -30,30 +29,36 @@ const Contact = () => {
       >
         Contact
       </Typography>
-      <Box>
-        <Stack
-          direction="row"
-          spacing={3}
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
+      <Stack
+        direction="row"
+        spacing={3}
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Link>
+          <EmailIcon sx={{ fontSize: "60px" }} />
+        </Link>
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <Link>
-            <EmailIcon sx={{ fontSize: "60px" }} />
-          </Link>
-          <Link>
-            <img src="/assets/linkedin-icon.svg" alt="LinkedIn" width="50px" />
-          </Link>
-          <Link>
-            <img src="/assets/github.svg" alt="Github" width="90px" />
-          </Link>
-          <Link>
-            <img src="/assets/resume.png" alt="Resume" width="70px" />
-          </Link>
-        </Stack>
-      </Box>
+          <img src="/assets/linkedin-icon.svg" alt="LinkedIn" width="50" />
+        </a>
+        <a
+          href="https://www.github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/assets/github.svg" alt="Github" width="90px" />
+        </a>
+        <Link>
+          <img src="/assets/resume.png" alt="Resume" width="70px" />
+        </Link>
+      </Stack>
     </Box>
   );
 };

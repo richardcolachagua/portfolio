@@ -144,10 +144,10 @@ const Homepage = () => {
           <Box sx={{ paddingTop: "100px" }}>
             <Websites />
           </Box>
+          <Box sx={{ paddingTop: "100px" }}>
+            <Contact />
+          </Box>
         </Container>
-        <Box sx={{ paddingTop: "100px" }}>
-          <Contact />
-        </Box>
       </ThemeProvider>
     </Box>
   );
