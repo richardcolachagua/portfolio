@@ -17,7 +17,7 @@ const Homepage = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "black",
+        backgroundColor: "white",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

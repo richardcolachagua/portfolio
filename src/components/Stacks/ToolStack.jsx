@@ -111,6 +111,7 @@ export default function ToolStacks() {
               color: "wheat",
               textAlign: "center",
               marginTop: 2,
+              marginBottom: 2.5,
             }}
           >
             Creative Tools
@@ -212,5 +213,9 @@ const designItemData = [
   {
     img: "/assets/midjourney.svg",
     title: "midjourney",
+  },
+  {
+    img: "/assets/adobe-creative-cloud.svg",
+    title: "AdobeCC",
   },
 ];
