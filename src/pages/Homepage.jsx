@@ -8,11 +8,10 @@ import {
   Stack,
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import TechStack from "../components/Stacks/TechStack";
-import DesignStack from "../components/Stacks/DesignStack";
+import { motion } from "framer-motion";
 import Contact from "../components/Contact";
 import Websites from "../components/Websites/Websites";
-import { motion } from "framer-motion";
+import ToolStacks from "../components/Stacks/ToolStack";
 
 const Homepage = () => {
   const defaultTheme = createTheme();
@@ -54,11 +53,7 @@ const Homepage = () => {
                 Software Engineer.
               </Typography>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={fadeInVariant}
-            ></motion.div>
+
             <motion.div
               initial="hidden"
               animate="visible"
@@ -117,30 +112,11 @@ const Homepage = () => {
               </Typography>
             </motion.div>
           </Box>
-          <Grid
-            container
-            rowSpacing={1}
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-          >
-            <Stack
-              direction="row"
-              sx={{
-                width: "100%",
-                justifyContent: "space-between",
-                alignItems: "flex-start",
-                padding: "0 20px",
-              }}
-            >
-              <Box sx={{ flex: "1 1 auto", maxWidth: "50%" }}>
-                {" "}
-                <TechStack />
-              </Box>
-              <Box sx={{ flex: "1 1 auto", maxWidth: "50%" }}>
-                {" "}
-                <DesignStack />
-              </Box>
-            </Stack>
-          </Grid>
+
+          <Box>
+            <ToolStacks />
+          </Box>
+
           <Box sx={{ paddingTop: "100px" }}>
             <Websites />
           </Box>
