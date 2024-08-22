@@ -38,7 +38,7 @@ const Contact = () => {
           alignItems: "center",
         }}
       >
-        <Link>
+        <Link href="mailto:richardcolachagua@gmail.com">
           <EmailIcon sx={{ fontSize: "60px" }} />
         </Link>
         <a
@@ -55,7 +55,7 @@ const Contact = () => {
         >
           <img src="/assets/github.svg" alt="Github" width="90px" />
         </a>
-        <Link>
+        <Link href="/assets/your_resume.pdf" download="Your_Resume.pdf">
           <img src="/assets/resume.png" alt="Resume" width="70px" />
         </Link>
       </Stack>
