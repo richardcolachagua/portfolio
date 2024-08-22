@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Typography,
-  Box,
-  Container,
-  Grid,
-  CssBaseline,
-  Stack,
-} from "@mui/material";
+import { Typography, Box, Container, CssBaseline } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { motion } from "framer-motion";
 import Contact from "../components/Contact";
@@ -112,11 +105,9 @@ const Homepage = () => {
               </Typography>
             </motion.div>
           </Box>
-
           <Box>
             <ToolStacks />
           </Box>
-
           <Box sx={{ paddingTop: "100px" }}>
             <Websites />
           </Box>

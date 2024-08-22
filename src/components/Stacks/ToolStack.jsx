@@ -1,25 +1,11 @@
 import React from "react";
-import {
-  Grid,
-  Stack,
-  Box,
-  Typography,
-  ImageList,
-  ImageListItem,
-} from "@mui/material";
+import { Grid, Box, Typography, ImageList, ImageListItem } from "@mui/material";
 
 export default function ToolStacks() {
   return (
-    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-      <Stack
-        sx={{
-          width: "100%",
-          justifyContent: "space-between",
-          alignItems: "flex-start",
-          padding: "0 20px",
-        }}
-      >
-        <Box sx={{ flex: "1 1 auto", maxWidth: "50%" }}>
+    <Grid container spacing={2} sx={{ padding: "20px" }}>
+      <Grid item xs={12} md={6}>
+        <Box>
           <Typography
             variant="h3"
             sx={{
@@ -103,28 +89,37 @@ export default function ToolStacks() {
             ))}
           </ImageList>
         </Box>
+      </Grid>
 
+      <Grid item xs={12} md={6}>
         <Box>
           <Typography
             variant="h3"
-            marginLeft={30}
-            sx={{ fontWeight: "bold", color: "beige" }}
+            sx={{
+              fontWeight: "bold",
+              color: "beige",
+              textAlign: "center",
+              marginTop: 3,
+            }}
           >
             Design Stack
           </Typography>
           <Typography
             variant="h5"
-            marginLeft={30}
-            sx={{ fontWeight: "bold", color: "beige" }}
+            sx={{
+              fontWeight: "bold",
+              color: "wheat",
+              textAlign: "center",
+              marginTop: 2,
+            }}
           >
             Creative Tools
           </Typography>
           <ImageList
             sx={{
-              width: 300,
-              height: 300,
-              marginBottom: "20px",
-              marginLeft: "230px",
+              width: "100%",
+              margin: "0 auto",
+              paddingBottom: 2,
             }}
             cols={3}
             gap={20}
@@ -137,8 +132,8 @@ export default function ToolStacks() {
                   alt={item.title}
                   loading="lazy"
                   style={{
-                    width: "100%",
-                    height: "100%",
+                    width: "70%",
+                    height: "70%",
                     objectFit: "contain",
                   }}
                 />
@@ -146,10 +141,8 @@ export default function ToolStacks() {
             ))}
           </ImageList>
         </Box>
-      </Stack>
+      </Grid>
     </Grid>
-
-    // </Box>
   );
 }
 
