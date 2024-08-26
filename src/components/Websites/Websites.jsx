@@ -38,13 +38,13 @@ const settings = {
 
 const Websites = () => {
   return (
-    <Box sx={{ backgroundColor: "#121212", padding: "40px 20px" }}>
+    <Box sx={{ backgroundColor: "", padding: "40px 20px" }}>
       <Typography
         variant="h3"
         component="h2"
         align="center"
         sx={{
-          color: "white",
+          color: "black",
           marginBottom: "40px",
           fontFamily: "helvetica",
           fontWeight: "bold",

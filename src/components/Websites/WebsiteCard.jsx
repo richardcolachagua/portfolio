@@ -14,8 +14,8 @@ const WebsiteCard = ({ image, title }) => {
       sx={{
         maxWidth: 800,
         height: 500,
-        backgroundColor: "#1A1A1A",
-        color: "white",
+        backgroundColor: "",
+        color: "black",
         borderRadius: "16px",
       }}
     >

@@ -17,7 +17,7 @@ const Homepage = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "white",
+        backgroundColor: "grey",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -56,8 +56,9 @@ const Homepage = () => {
                 sx={{
                   color: "white",
                   fontWeight: "bold",
-                  paddingTop: "50px",
+                  paddingTop: "20px",
                   paddingBottom: "30px",
+                  fontSize: "40px",
                   fontFamily: "helvetica",
                 }}
               >
@@ -111,7 +112,15 @@ const Homepage = () => {
           <Box sx={{ paddingTop: "100px" }}>
             <Websites />
           </Box>
-          <Box sx={{ paddingTop: "100px" }}>
+          <Box
+            sx={{
+              paddingTop: "100px",
+              paddingBottom: "10%",
+              alignContent: "center",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <Contact />
           </Box>
         </Container>

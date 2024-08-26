@@ -7,8 +7,6 @@ const Contact = () => {
   return (
     <Box
       sx={{
-        border: "3px solid #ccc",
-        borderRadius: "15px",
         height: "250px",
         width: "500px",
         display: "flex",
@@ -16,7 +14,6 @@ const Contact = () => {
         justifyContent: "center",
         alignItems: "center",
         left: "50%",
-        backgroundColor: "rgba(242, 242, 242, .5)",
       }}
     >
       <Typography
@@ -39,7 +36,7 @@ const Contact = () => {
         }}
       >
         <Link href="mailto:richardcolachagua@gmail.com">
-          <EmailIcon sx={{ fontSize: "60px" }} />
+          <EmailIcon sx={{ fontSize: "60px", color: "black" }} />
         </Link>
         <a
           href="https://www.linkedin.com/"
