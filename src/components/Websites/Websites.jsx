@@ -44,7 +44,7 @@ const Websites = () => {
         component="h2"
         align="center"
         sx={{
-          color: "black",
+          color: "white",
           marginBottom: "40px",
           fontFamily: "helvetica",
           fontWeight: "bold",

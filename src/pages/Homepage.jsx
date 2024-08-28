@@ -40,7 +40,7 @@ const Homepage = () => {
               color: "white",
               paddingTop: "40px",
               fontSize: "80px",
-              fontFamily: "unset",
+              fontFamily: "Helvetica",
             }}
           >
             New York City Based Software Engineer
@@ -69,18 +69,18 @@ const Homepage = () => {
                   sx={{
                     color: "white",
                     fontWeight: "bold",
-                    paddingTop: "20px",
+                    paddingTop: "80px",
                     paddingBottom: "30px",
-                    fontSize: "40px",
-                    fontFamily: "helvetica",
+                    fontSize: "50px",
+                    fontFamily: "Helvetica",
                   }}
                 >
                   A B O U T M E
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: "26px",
-                    fontFamily: "helvetica",
+                    fontSize: "86px",
+                    fontFamily: "Helvetica",
                     fontWeight: "bold",
                     color: "white",
                     alignContent: "center",
@@ -89,12 +89,10 @@ const Homepage = () => {
                     paddingBottom: "30px",
                   }}
                 >
-                  I have always had a natural curiosity of learning, and in
-                  2021, I left the marketng career I had started to carve out
-                  for myself to venture into the tech industry. I had watched a
-                  tutorial here and there, asked a friend how to get started,
-                  and one day took the plunge. I've been studying and working
-                  small jobs since.
+                  I have always had a natural curiosity of learning. In 2021, I
+                  left the marketng career I had started to pivot into tech. I
+                  had watched a few coding tutorials, asked a friend how to get
+                  started, and one day took the plunge.
                 </Typography>
               </motion.div>
               <motion.div
@@ -102,14 +100,14 @@ const Homepage = () => {
                 animate="visible"
                 variants={fadeInVariant}
               >
-                <Typography
+                {/* <Typography
                   sx={{
                     fontSize: "32px",
                     fontFamily: "helvetica",
                     fontWeight: "bold",
                     color: "white",
-                    alignContent: "center",
-                    justifyContent: "center",
+                    alignContent: "end",
+                    justifyContent: "end",
                     display: "flex",
                     paddingBottom: "30px",
                   }}
@@ -117,7 +115,7 @@ const Homepage = () => {
                   Having a graphic design background gives me an advantage as a
                   software engineer as it helps me understand frontend web
                   development from an entirely different approach.
-                </Typography>
+                </Typography> */}
               </motion.div>
             </Box>
             <Box>

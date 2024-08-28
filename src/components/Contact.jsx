@@ -20,7 +20,7 @@ const Contact = () => {
         variant="h3"
         sx={{
           fontWeight: "bold",
-          color: "black",
+          color: "white",
           marginBottom: "10px",
         }}
       >

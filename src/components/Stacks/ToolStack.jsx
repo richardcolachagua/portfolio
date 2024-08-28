@@ -7,18 +7,18 @@ export default function ToolStacks() {
       <Grid item xs={12} md={6}>
         <Box>
           <Typography
-            variant="h3"
             sx={{
               fontWeight: "bold",
               color: "white",
               textAlign: "center",
+              fontSize: "70px",
               marginTop: 3,
             }}
           >
             Tech Stack
           </Typography>
           <Typography
-            variant="h5"
+            variant="h3"
             sx={{
               fontWeight: "bold",
               color: "white",
@@ -50,12 +50,13 @@ export default function ToolStacks() {
             ))}
           </ImageList>
           <Typography
-            variant="h5"
+            variant="h3"
             sx={{
               fontWeight: "bold",
               color: "white",
               textAlign: "center",
               marginTop: 2,
+              marginBottom: 3,
             }}
           >
             Backend
@@ -94,18 +95,18 @@ export default function ToolStacks() {
       <Grid item xs={12} md={6}>
         <Box>
           <Typography
-            variant="h3"
             sx={{
               fontWeight: "bold",
               color: "white",
               textAlign: "center",
               marginTop: 3,
+              fontSize: "70px",
             }}
           >
             Design Stack
           </Typography>
           <Typography
-            variant="h5"
+            variant="h3"
             sx={{
               fontWeight: "bold",
               color: "white",
