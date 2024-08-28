@@ -43,7 +43,7 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/assets/linkedin-icon.svg" alt="LinkedIn" width="50" />
+          <img src="/assets/linkedin-icon.svg" alt="LinkedIn" width="50px" />
         </a>
         <a
           href="https://www.github.com/"

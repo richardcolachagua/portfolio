@@ -10,7 +10,7 @@ export default function ToolStacks() {
             variant="h3"
             sx={{
               fontWeight: "bold",
-              color: "beige",
+              color: "white",
               textAlign: "center",
               marginTop: 3,
             }}
@@ -21,7 +21,7 @@ export default function ToolStacks() {
             variant="h5"
             sx={{
               fontWeight: "bold",
-              color: "wheat",
+              color: "white",
               textAlign: "center",
               marginTop: 2,
             }}
@@ -53,7 +53,7 @@ export default function ToolStacks() {
             variant="h5"
             sx={{
               fontWeight: "bold",
-              color: "wheat",
+              color: "white",
               textAlign: "center",
               marginTop: 2,
             }}
@@ -97,7 +97,7 @@ export default function ToolStacks() {
             variant="h3"
             sx={{
               fontWeight: "bold",
-              color: "beige",
+              color: "white",
               textAlign: "center",
               marginTop: 3,
             }}
@@ -108,7 +108,7 @@ export default function ToolStacks() {
             variant="h5"
             sx={{
               fontWeight: "bold",
-              color: "wheat",
+              color: "white",
               textAlign: "center",
               marginTop: 2,
               marginBottom: 2.5,

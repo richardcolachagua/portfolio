@@ -20,11 +20,21 @@ const VideoBackground = ({ videoSrc, children }) => {
           width: "100%",
           height: "100%",
           objectFit: "cover",
+          opacity: 0.9,
         }}
       >
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <Box
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+        }}
+      />
       <Box
         sx={{
           position: "relative",
