@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Card,
   CardMedia,
@@ -17,6 +17,11 @@ const WebsiteCard = ({ image, title, description, paragraph }) => {
         backgroundColor: "yellow",
         color: "black",
         borderRadius: "16px",
+        transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+        "&:hover": {
+          transform: "scale(1.05)",
+          boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
+        },
       }}
     >
       <CardMedia
@@ -59,9 +64,13 @@ const WebsiteCard = ({ image, title, description, paragraph }) => {
           sx={{
             backgroundColor: "black",
             borderRadius: "30px",
-            marginTop: "200px",
+            marginTop: "100px",
             justifyContent: "center",
             display: "flex",
+            transition: "background-color 0.3s ease-in-out",
+            "&:hover": {
+              backgroundColor: "#333",
+            },
           }}
         >
           View Website

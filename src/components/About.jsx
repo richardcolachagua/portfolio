@@ -15,9 +15,9 @@ const About = () => {
           sx={{
             color: "white",
             fontWeight: "bold",
-            paddingTop: "80px",
-            paddingBottom: "30px",
-            fontSize: "50px",
+            paddingTop: "60px",
+            paddingBottom: "20px",
+            fontSize: "30px",
             fontFamily: "Helvetica",
           }}
         >
@@ -25,7 +25,7 @@ const About = () => {
         </Typography>
         <Typography
           sx={{
-            fontSize: "86px",
+            fontSize: "40px",
             fontFamily: "Helvetica",
             fontWeight: "bold",
             color: "white",
@@ -36,9 +36,9 @@ const About = () => {
           }}
         >
           I have always had a natural curiosity of learning. In 2021, I left the
-          marketng career I had started to pivot into tech. I had watched a few
-          coding tutorials, asked a friend how to get started, and one day took
-          the plunge.
+          marketing career I had started to pivot into the software side of
+          tech. I had watched a few coding tutorials, asked a friend how to get
+          started, and took the plunge.
         </Typography>
       </motion.div>
       <motion.div initial="hidden" animate="visible" variants={fadeInVariant}>

@@ -10,14 +10,23 @@ const websites = [
     image: "",
     title: "Dream Closet",
     description: "Full Stack Application Website",
+    paragraph:
+      "A website where you can create a profile, search for clothes on our search engine, & save your clothes and searches for later.",
   },
   {
     image: "",
     title: "Ironman vs Batman",
     description: "Frontend UI Project",
-    paragraph: "Who is better?",
+    paragraph:
+      "The debate is always who is the better of the two between these two billionaires.",
   },
-  { image: "", title: "Career Website", description: "Frontend UI Project" },
+  {
+    image: "",
+    title: "Career Website",
+    description: "Frontend UI Project",
+    paragraph:
+      "A website where you can look up tips on resumes, linkedIn, and interview prep",
+  },
 ];
 
 const settings = {

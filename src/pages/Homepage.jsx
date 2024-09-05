@@ -24,7 +24,7 @@ const Homepage = () => {
               fontWeight: "bold",
               color: "white",
               paddingTop: "40px",
-              fontSize: "160px",
+              fontSize: "130px",
               fontFamily: "Helvetica",
             }}
           >
