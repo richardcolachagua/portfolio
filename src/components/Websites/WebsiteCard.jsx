@@ -8,13 +8,13 @@ import {
   Button,
 } from "@mui/material";
 
-const WebsiteCard = ({ image, title }) => {
+const WebsiteCard = ({ image, title, description, paragraph }) => {
   return (
     <Card
       sx={{
         maxWidth: 800,
         height: 500,
-        backgroundColor: "",
+        backgroundColor: "yellow",
         color: "black",
         borderRadius: "16px",
       }}
@@ -24,24 +24,42 @@ const WebsiteCard = ({ image, title }) => {
         height=""
         image={image}
         alt={title}
+        description={description}
         sx={{ borderRadius: "16px 16px 0 0" }}
       />
       <CardContent>
         <Typography
           gutterBottom
-          variant="h4"
-          sx={{ fontWeight: "bold", justifyContent: "center", display: "flex" }}
+          sx={{
+            fontSize: "30px",
+            fontWeight: "bold",
+            justifyContent: "center",
+            display: "flex",
+          }}
         >
           {title}
+        </Typography>
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: "bold", justifyContent: "left" }}
+        >
+          {description}
+        </Typography>
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: "bold", justifyContent: "left" }}
+        >
+          {paragraph}
         </Typography>
       </CardContent>
       <CardActions>
         <Button
           variant="contained"
+          size="large"
           sx={{
             backgroundColor: "black",
-            marginTop: "300px",
-            marginLeft: "100px",
+            borderRadius: "30px",
+            marginTop: "200px",
             justifyContent: "center",
             display: "flex",
           }}

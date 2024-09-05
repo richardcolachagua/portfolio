@@ -6,9 +6,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const websites = [
-  { image: "", title: "Dream Closet" },
-  { image: "", title: "Ironman vs Batman" },
-  { image: "", title: "Career Website" },
+  {
+    image: "",
+    title: "Dream Closet",
+    description: "Full Stack Application Website",
+  },
+  {
+    image: "",
+    title: "Ironman vs Batman",
+    description: "Frontend UI Project",
+    paragraph: "Who is better?",
+  },
+  { image: "", title: "Career Website", description: "Frontend UI Project" },
 ];
 
 const settings = {
@@ -40,7 +49,7 @@ const Websites = () => {
   return (
     <Box sx={{ backgroundColor: "", padding: "40px 20px" }}>
       <Typography
-        variant="h3"
+        variant="h1"
         component="h2"
         align="center"
         sx={{
@@ -50,12 +59,17 @@ const Websites = () => {
           fontWeight: "bold",
         }}
       >
-        Websites I've Built
+        Projects
       </Typography>
       <Slider {...settings}>
         {websites.map((site, index) => (
           <Box key={index} sx={{ padding: "0 10px" }}>
-            <WebsiteCard image={site.image} title={site.title} />
+            <WebsiteCard
+              image={site.image}
+              title={site.title}
+              description={site.description}
+              paragraph={site.paragraph}
+            />
           </Box>
         ))}
       </Slider>
