@@ -5,17 +5,30 @@ const Learning = () => {
   return (
     <Box
       sx={{
-        backgroundImage: ``,
+        backgroundImage: "assets/learning.png",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        minHeight: "100vh",
       }}
     >
-      <Typography variant="h1" sx={{ fontWeight: "bold" }}>
+      <Typography
+        variant="h3"
+        sx={{
+          fontWeight: "bold",
+          color: "white",
+          textAlign: "center",
+        }}
+      >
         Learning is a lifelong process. You never stop learning.
       </Typography>
-      <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+      <Typography
+        variant="h6"
+        sx={{
+          fontWeight: "bold",
+          color: "white",
+          textAlign: "center",
+        }}
+      >
         Bob Proctor
       </Typography>
     </Box>

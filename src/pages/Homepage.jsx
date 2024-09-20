@@ -1,15 +1,42 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Typography, Box, Container, CssBaseline } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { motion } from "framer-motion";
+import Lenis from "@studio-freight/lenis";
 import Contact from "../components/Contact";
 import Websites from "../components/Websites/Websites";
 import ToolStacks from "../components/Stacks/ToolStack";
 import VideoBackground from "../components/VideoBackground";
 import About from "../components/About";
+import Learning from "../components/Learning";
 
 const Homepage = () => {
   const defaultTheme = createTheme();
+  const lenisRef = useRef();
+
+  useEffect(() => {
+    lenisRef.current = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: "vertical",
+      gestureOrientation: "vertical",
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    });
+
+    function raf(time) {
+      lenisRef.current.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenisRef.current.destroy();
+    };
+  }, []);
 
   return (
     <>
@@ -63,6 +90,9 @@ const Homepage = () => {
             </Box>
             <Box sx={{ paddingTop: "100px" }}>
               <Websites />
+            </Box>
+            <Box>
+              <Learning />
             </Box>
             <Box
               sx={{

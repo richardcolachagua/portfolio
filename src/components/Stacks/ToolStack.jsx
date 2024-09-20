@@ -3,7 +3,7 @@ import { Grid, Box, Typography, ImageList, ImageListItem } from "@mui/material";
 
 export default function ToolStacks() {
   return (
-    <Grid container spacing={2} sx={{ padding: "20px" }}>
+    <Grid container spacing={2} sx={{ padding: "40px" }}>
       <Grid item xs={12} md={6}>
         <Box>
           <Typography
@@ -33,6 +33,7 @@ export default function ToolStacks() {
               width: "100%",
               margin: "0 auto",
               paddingBottom: 2,
+              paddingLeft: 3,
             }}
             cols={3}
             gap={20}
@@ -44,7 +45,7 @@ export default function ToolStacks() {
                   src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                   alt={item.title}
                   loading="lazy"
-                  style={{ width: "70%", height: "70%", objectFit: "contain" }}
+                  style={{ width: "60%", height: "50%", objectFit: "contain" }}
                 />
               </ImageListItem>
             ))}
@@ -122,6 +123,7 @@ export default function ToolStacks() {
               width: "100%",
               margin: "0 auto",
               paddingBottom: 2,
+              paddingLeft: 5,
             }}
             cols={3}
             gap={20}
@@ -134,7 +136,7 @@ export default function ToolStacks() {
                   alt={item.title}
                   loading="lazy"
                   style={{
-                    width: "70%",
+                    width: "60%",
                     height: "70%",
                     objectFit: "contain",
                   }}
