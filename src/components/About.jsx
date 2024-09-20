@@ -36,9 +36,9 @@ const About = () => {
           }}
         >
           I have always had a natural curiosity of learning. In 2021, I left the
-          marketing career I had started to pivot into the software side of
-          tech. I had watched a few coding tutorials, asked a friend how to get
-          started, and took the plunge.
+          marketing career I had started, to pivot into software engineering. I
+          had watched a few coding tutorials, asked a friend how to get started,
+          and took the plunge.
         </Typography>
       </motion.div>
       <motion.div initial="hidden" animate="visible" variants={fadeInVariant}>

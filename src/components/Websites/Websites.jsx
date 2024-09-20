@@ -9,23 +9,23 @@ const websites = [
   {
     image: "",
     title: "Dream Closet",
-    description: "Full Stack Application Website",
+    description: "Full Stack Application",
     paragraph:
-      "A website where you can create a profile, search for clothes on our search engine, & save your clothes and searches for later.",
+      "A website where you can create a profile, search for clothes on our search engine, & save your clothes & searches for later.",
   },
   {
     image: "",
     title: "Ironman vs Batman",
     description: "Frontend UI Project",
     paragraph:
-      "The debate is always who is the better of the two between these two billionaires.",
+      "The debate is always who is the better of the two between these two billionaires, Ironman vs Batman",
   },
   {
     image: "",
     title: "Career Website",
     description: "Frontend UI Project",
     paragraph:
-      "A website where you can look up tips on resumes, linkedIn, and interview prep",
+      "A website where you can view tips on resume revamping, linkedIn optimimzation, and interview preperation.",
   },
 ];
 

@@ -50,8 +50,8 @@ const Homepage = () => {
             sx={{
               fontWeight: "bold",
               color: "white",
-              paddingTop: "40px",
-              fontSize: "130px",
+              paddingTop: "50px",
+              fontSize: "100px",
               fontFamily: "Helvetica",
             }}
           >

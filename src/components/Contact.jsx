@@ -36,7 +36,7 @@ const Contact = () => {
         }}
       >
         <Link href="mailto:richardcolachagua@gmail.com">
-          <EmailIcon sx={{ fontSize: "60px", color: "black" }} />
+          <EmailIcon sx={{ fontSize: "60px", color: "white" }} />
         </Link>
         <a
           href="https://www.linkedin.com/"
@@ -53,7 +53,12 @@ const Contact = () => {
           <img src="/assets/github.svg" alt="Github" width="90px" />
         </a>
         <Link href="/assets/your_resume.pdf" download="Your_Resume.pdf">
-          <img src="/assets/resume.png" alt="Resume" width="70px" />
+          <img
+            src="/assets/resume.png"
+            alt="Resume"
+            width="70px"
+            style={{ color: "white" }}
+          />
         </Link>
       </Stack>
     </Box>

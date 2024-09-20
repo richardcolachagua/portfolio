@@ -36,7 +36,7 @@ const WebsiteCard = ({ image, title, description, paragraph }) => {
         <Typography
           gutterBottom
           sx={{
-            fontSize: "30px",
+            fontSize: "27px",
             fontWeight: "bold",
             justifyContent: "center",
             display: "flex",
@@ -51,7 +51,7 @@ const WebsiteCard = ({ image, title, description, paragraph }) => {
           {description}
         </Typography>
         <Typography
-          variant="h6"
+          variant="body1"
           sx={{ fontWeight: "bold", justifyContent: "left" }}
         >
           {paragraph}
@@ -65,8 +65,6 @@ const WebsiteCard = ({ image, title, description, paragraph }) => {
             backgroundColor: "black",
             borderRadius: "30px",
             marginTop: "100px",
-            justifyContent: "center",
-            display: "flex",
             transition: "background-color 0.3s ease-in-out",
             "&:hover": {
               backgroundColor: "#333",
