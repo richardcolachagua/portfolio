@@ -57,7 +57,13 @@ const WebsiteCard = ({ image, title, description, paragraph }) => {
           {paragraph}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions
+        sx={{
+          marginTop: "auto",
+          justifyContent: "center",
+          paddingBottom: "16px",
+        }}
+      >
         <Button
           variant="contained"
           size="large"

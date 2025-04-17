@@ -72,7 +72,7 @@ const Homepage = () => {
       </Box>
       <Box
         sx={{
-          backgroundColor: "black",
+          backgroundColor: "red",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
