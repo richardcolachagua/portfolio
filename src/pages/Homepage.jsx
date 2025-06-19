@@ -8,6 +8,7 @@ import ToolStacks from "../components/Stacks/ToolStack";
 import VideoBackground from "../components/VideoBackground";
 import About from "../components/About";
 import Learning from "../components/Learning";
+import { Logos } from "../components/Marquee";
 
 const Homepage = () => {
   const defaultTheme = createTheme();
@@ -57,6 +58,7 @@ const Homepage = () => {
           >
             Richard Joel Colachagua
           </Typography>
+          <Logos />
           <Typography
             sx={{
               fontWeight: "bold",
